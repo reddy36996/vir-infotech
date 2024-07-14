@@ -3,44 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIR Infotech - Game Development Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Company Portfolio</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             color: #333;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
             margin: 0;
-            font-size: 2.5em;
+            padding: 0;
+            background-color: #f4f4f4;
         }
         .container {
             width: 80%;
             margin: auto;
-            padding: 20px 0;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        section {
+            margin: 20px 0;
         }
         .project {
-            background-color: #fff;
-            margin-bottom: 20px;
+            background: #fff;
+            margin: 20px 0;
             padding: 20px;
+            border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
         }
         .project h2 {
             margin-top: 0;
-            color: #333;
-        }
-        .project img {
-            max-width: 100%;
-            border-radius: 8px;
         }
         .project a {
             color: #1e90ff;
@@ -49,42 +48,159 @@
         .project a:hover {
             text-decoration: underline;
         }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
         footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #333;
+            background: #333;
             color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>VIR Infotech</h1>
-        <p>Professional Game Development Portfolio</p>
+        <h1>Company Portfolio</h1>
     </header>
     <div class="container">
-        <div class="project">
-            <h2>Space Adventure</h2>
-            <p><strong>Role:</strong> Lead Developer</p>
-            <p><strong>Description:</strong> A space exploration game where players navigate through different planets and galaxies.</p>
-            <p><strong>Technologies Used:</strong> Unity, C#, Blender, Photoshop</p>
-            <p><strong>Challenges and Solutions:</strong> Implemented complex AI for enemy spaceships, optimized rendering for large-scale environments.</p>
-            <p><a href="https://link-to-project" target="_blank">View Project</a></p>
-            <img src="https://link-to-image" alt="Project Screenshot">
-        </div>
-        <div class="project">
-            <h2>Fantasy Quest</h2>
-            <p><strong>Role:</strong> Senior Developer</p>
-            <p><strong>Description:</strong> An RPG game set in a medieval fantasy world with intricate quests and character development.</p>
-            <p><strong>Technologies Used:</strong> Unity, C#, Maya, Substance Painter</p>
-            <p><strong>Challenges and Solutions:</strong> Developed a dynamic quest system, integrated realistic character animations.</p>
-            <p><a href="https://link-to-project" target="_blank">View Project</a></p>
-            <img src="https://link-to-image" alt="Project Screenshot">
-        </div>
-        <!-- Add more projects as needed -->
+        <section>
+            <h2>Mobile Apps via Unity</h2>
+            <div class="project">
+                <h2>Room Flip - Home Decor</h2>
+                <p><strong>Role:</strong> Project Lead</p>
+                <p><strong>Responsibilities:</strong> Managed a team of 8+ developers, implemented Match3 Mechanics, revamped the Avatar System, integrated Playfab SDK, and created a Unity Cloud Build tool.</p>
+                <p><strong>Achievements:</strong> Delivered the project on time, enhancing user engagement with new mechanics and streamlined avatar customization.</p>
+                <p><a href="https://play.google.com/store/apps/details?id=com.roomflip.home.design.games.decor.decorate.makeover.mansion.style.covet.match3.dressup.fashion">Google Play Link</a></p>
+                <img src="images/RoomFlip_01.png" alt="Room Flip Screenshot">
+            </div>
+        </section>
+
+        <section>
+            <h2>UI Framework Development</h2>
+            <div class="project">
+                <h2>UI Framework using Abstract Factory Design Pattern</h2>
+                <p><strong>Objective:</strong> Simplified UI development for junior developers.</p>
+                <p><strong>Implementation:</strong> Created abstract methods to handle popups, full-screen panels, back key functionality, and UI flow.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Casual Games Development</h2>
+            <div class="project">
+                <h2>2D and 3D Games</h2>
+                <p>Developed various casual games including endless runners, match-3 games, and board games like Ludo.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Casino Games Development</h2>
+            <div class="project">
+                <h2>Bingo, Poker, Teen Patti</h2>
+                <p>Developed and managed multiple casino games with features such as multiplayer modes, AI opponents, and real-time transactions.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>3D Simulation Games</h2>
+            <div class="project">
+                <h2>Soccer, Bike Racing, Car Racing, Boxing</h2>
+                <p>Created high-quality 3D simulation games with realistic physics, AI integration, and multiplayer support.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Multiplayer Games</h2>
+            <div class="project">
+                <h2>Single or Multiplayer Games via Photon or Custom Servers on Azure</h2>
+                <p>Implemented robust multiplayer frameworks and hosted custom servers to ensure seamless gameplay experiences.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Native Plugins Integration</h2>
+            <div class="project">
+                <h2>Real Money Transactions, Ad Mediation, Firebase SDKs</h2>
+                <p>Integrated various native plugins to enhance functionality and user experience.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Unity Platforms Expertise</h2>
+            <div class="project">
+                <h2>Platforms</h2>
+                <p>Android, iOS, Windows Mobile/PC, WebGL, Facebook Gameroom, TvOS (Apple), Chromecast (Android TV).</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Highlighted Projects</h2>
+            <div class="project">
+                <h2>Happs</h2>
+                <p><strong>Role:</strong> Developer</p>
+                <p><strong>Description:</strong> 3D map generation with building, POIs, water, and roads for given geographical areas.</p>
+                <p><strong>Technologies Used:</strong> Js, Three.js, Mapzen, OpenStreetMap.</p>
+                <p><a href="https://www.juegostudio.com/portfolio/happs">Project Link</a></p>
+                <img src="images/Happs_01.png" alt="Happs Screenshot">
+            </div>
+            <div class="project">
+                <h2>Ronnie Cop</h2>
+                <p><strong>Role:</strong> Developer</p>
+                <p><strong>Description:</strong> Endless runner game following the journey of Ronnie as a police officer.</p>
+                <p><strong>Technologies Used:</strong> Unity3D Mecanim, Google Analytics.</p>
+                <p><a href="https://www.youtube.com/watch?v=J3naI4qwY5g">YouTube Link</a></p>
+                <img src="images/RonnieCop_01.png" alt="Ronnie Cop Screenshot">
+            </div>
+            <div class="project">
+                <h2>Spongebob Krusty Cook-Off</h2>
+                <p><strong>Role:</strong> Developer</p>
+                <p><strong>Description:</strong> Explore the World of SpongeBob SquarePants, grill up delicious Krabby Patties, and more.</p>
+                <p><strong>Technologies Used:</strong> Zenject SDK, NavMesh, Bezier Curves, Gacha System.</p>
+                <p><a href="https://play.google.com/store/apps/details?id=com.tiltingpoint.spongebob">Google Play Link</a></p>
+                <img src="images/SpongebobKrustyCookOff_01.png" alt="Spongebob Krusty Cook-Off Screenshot">
+            </div>
+            <div class="project">
+                <h2>Dream Ludo</h2>
+                <p><strong>Role:</strong> Developer</p>
+                <p><strong>Description:</strong> Cross-platform multiplayer Ludo game supporting Facebook, Android, iOS, and offline mode.</p>
+                <p><strong>Technologies Used:</strong> Web sockets, Behavior Trees, Custom Plugin for Bot Logic.</p>
+                <p><a href="https://www.youtube.com/watch?v=kVn0M4RmO2k">YouTube Link</a></p>
+                <img src="images/DreamLudo_01.png" alt="Dream Ludo Screenshot">
+            </div>
+            <div class="project">
+                <h2>Teen Patti Platinum - Indian Card Poker</h2>
+                <p><strong>Role:</strong> Developer</p>
+                <p><strong>Description:</strong> Free online teen patti game with many variations and modes.</p>
+                <p><strong>Technologies Used:</strong> Serverless backend, Web app scaling, Azure chat bots.</p>
+                <p><a href="https://download.cnet.com/teen-patti-platinum-indian-card-poker-tpp/3000-2647_4-78399546.html">CNET Link</a></p>
+                <img src="images/TeenPattiPlatinum_01.png" alt="Teen Patti Platinum Screenshot">
+            </div>
+            <div class="project">
+                <h2>Video Poker - Play Online or Offline</h2>
+                <p><strong>Role:</strong> Developer</p>
+                <p><strong>Description:</strong> Free online video poker game with unique poker machines.</p>
+                <p><strong>Technologies Used:</strong> REST APIs, Web sockets, SignalR, Azure Storage.</p>
+                <p><a href="https://play.google.com/store/apps/details?id=com.videopoker.game">Google Play Link</a></p>
+                <img src="images/VideoPoker_01.png" alt="Video Poker Screenshot">
+            </div>
+            <div class="project">
+                <h2>Bingo Games</h2>
+                <p><strong>Role:</strong> Developer</p>
+                <p><strong>Description:</strong> Free online bingo game with multiplayer and unique power-ups.</p>
+                <p><strong>Technologies Used:</strong> NGUI, Microsoft Azure, AssetBundles.</p>
+                <p><a href="https://bingo-games-by-topaz-star.soft112.com/">Soft112 Link</a></p>
+                <img src="images/BingoGames_01.png" alt="Bingo Games Screenshot">
+            </div>
+        </section>
     </div>
     <footer>
-        <p>&copy; 2024 VIR Infotech</p>
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
     </footer>
 </body>
 </html>
