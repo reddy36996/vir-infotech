@@ -1,42 +1,90 @@
-<!DOCTYPE HTML>
-<!-- THE DOCTYPE tells the browser what type of webpage to render, the doctype used in this website is HTML5 which is the most recent HTML. -->
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>My Pimpin Website</title>
-	<!-- THE TITLE element is the name of the page, it is also visible in the browser tab. Its always good practice to give each page an appropriate title. -->
-	<meta name="description" content="A sample website, nothin fancy">
-      <meta http-equiv="author" content="Francisco Campos Arias">
-      <meta name="keywords" content="html, css, web, design, sample, practice">
-      <!-- These are META TAGS, they're used to describe the website, this information is read mainly by search engines like GOOGLE, YAHOO, ETC... -->	
-	<link rel="stylesheet" href="style.css">
-	<script src="http://localhost:8080/target/target-script-min.js#anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIR Infotech - Game Development Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px 0;
+        }
+        .project {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .project h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .project a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        .project a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-	<div class="container">
-<!-- THIS ACTUAL CONTENT BEGINS HERE...this is called a comment. which can only be seen when viewing the source code. This text CANNOT be seen by the browser. Its helpful when you need to place notes, comments or reminders in your code -->
-	<header>
-		<div class="header">
-			<h1>Welcome</h1>
-		</div>
-	</header>
-	<!-- END HEADER | the header element in new to HTML5 -->
-		<div class="main">
-			<h2>This is just an example with some web content. This is the Hero Unit.</h2>
-		</div>
-		<div class="feature">
-			<h3>Featured Content 1</h3>
-			<p>lorem ipsum dolor amet lorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum.</p>
-			<!-- LOREM IPSUM is universally used. Lorem ipsum is dummy text, it does't really mean anything. Its used to fill space or for mockups. -->
-		</div>
-		<div class="feature">
-			<h3>Featured Content 2</h3>
-			<p>lorem ipsum dolor amet lorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor.</p>
-		</div>
-	<footer>
-		&copy;2012 Francisco Campos Arias, All Rigts Reserved.
-	</footer>
-	<!-- END FOOTER | the footer element is also new to HTML5 -->
-	</div>
+    <header>
+        <h1>VIR Infotech</h1>
+        <p>Professional Game Development Portfolio</p>
+    </header>
+    <div class="container">
+        <div class="project">
+            <h2>Space Adventure</h2>
+            <p><strong>Role:</strong> Lead Developer</p>
+            <p><strong>Description:</strong> A space exploration game where players navigate through different planets and galaxies.</p>
+            <p><strong>Technologies Used:</strong> Unity, C#, Blender, Photoshop</p>
+            <p><strong>Challenges and Solutions:</strong> Implemented complex AI for enemy spaceships, optimized rendering for large-scale environments.</p>
+            <p><a href="https://link-to-project" target="_blank">View Project</a></p>
+            <img src="https://link-to-image" alt="Project Screenshot">
+        </div>
+        <div class="project">
+            <h2>Fantasy Quest</h2>
+            <p><strong>Role:</strong> Senior Developer</p>
+            <p><strong>Description:</strong> An RPG game set in a medieval fantasy world with intricate quests and character development.</p>
+            <p><strong>Technologies Used:</strong> Unity, C#, Maya, Substance Painter</p>
+            <p><strong>Challenges and Solutions:</strong> Developed a dynamic quest system, integrated realistic character animations.</p>
+            <p><a href="https://link-to-project" target="_blank">View Project</a></p>
+            <img src="https://link-to-image" alt="Project Screenshot">
+        </div>
+        <!-- Add more projects as needed -->
+    </div>
+    <footer>
+        <p>&copy; 2024 VIR Infotech</p>
+    </footer>
 </body>
 </html>
