@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Portfolio</title>
+    <title>Company Name Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             color: #333;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0;
         }
         .container {
             width: 80%;
@@ -20,13 +20,15 @@
             padding: 20px;
         }
         header {
-            background: #333;
+            background: linear-gradient(90deg, #ff8a00, #e52e71);
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         header h1 {
             margin: 0;
+            font-size: 2.5em;
         }
         section {
             margin: 20px 0;
@@ -35,22 +37,24 @@
             background: #fff;
             margin: 20px 0;
             padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .project h2 {
             margin-top: 0;
+            color: #ff8a00;
         }
         .project a {
-            color: #1e90ff;
+            color: #ff8a00;
             text-decoration: none;
         }
         .project a:hover {
             text-decoration: underline;
         }
-        .project img, .project video {
+        .project img, .project video, .project iframe {
             max-height: 200px;
             margin: 10px;
+            border-radius: 10px;
         }
         .scroller {
             display: flex;
@@ -58,11 +62,11 @@
             gap: 10px;
             padding: 10px 0;
         }
-        .scroller img, .scroller video {
+        .scroller img, .scroller video, .scroller iframe {
             flex-shrink: 0;
         }
         footer {
-            background: #333;
+            background: linear-gradient(90deg, #e52e71, #ff8a00);
             color: #fff;
             text-align: center;
             padding: 10px 0;
@@ -70,15 +74,40 @@
             bottom: 0;
             width: 100%;
         }
+        .intro-section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .intro-section h2 {
+            color: #e52e71;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Company Portfolio</h1>
+        <h1>VIR Infotech Portfolio</h1>
     </header>
     <div class="container">
+        <section class="intro-section">
+            <h2>Our Expertise</h2>
+            <p>We specialize in a wide range of developments:</p>
+            <ul>
+                <li>Mobile Apps via Unity</li>
+                <li>UI Framework Development</li>
+                <li>2D and 3D Casual Games</li>
+                <li>Casino Games</li>
+                <li>3D Simulation Games</li>
+                <li>Single or Multiplayer Games</li>
+                <li>Native Plugins Integration</li>
+                <li>Unity Platforms: Android, iOS, Windows Mobile/PC, WebGL, Facebook Gameroom, TvOS (Apple), Chromecast (Android TV)</li>
+            </ul>
+        </section>
+
         <section>
-            <h2>Mobile Apps via Unity</h2>
+            <h2>Highlighted Projects</h2>
             <div class="project">
                 <h2>Room Flip - Home Decor</h2>
                 <p><strong>Role:</strong> Project Lead</p>
@@ -92,87 +121,6 @@
                     <img src="Images/RoomFlip_04.jpg" alt="Room Flip Screenshot 4">
                     <img src="Images/RoomFlip_05.jpg" alt="Room Flip Screenshot 5">
                     <img src="Images/RoomFlip_06.jpg" alt="Room Flip Screenshot 6">
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>UI Framework Development</h2>
-            <div class="project">
-                <h2>UI Framework using Abstract Factory Design Pattern</h2>
-                <p><strong>Objective:</strong> Simplified UI development for junior developers.</p>
-                <p><strong>Implementation:</strong> Created abstract methods to handle popups, full-screen panels, back key functionality, and UI flow.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Casual Games Development</h2>
-            <div class="project">
-                <h2>2D and 3D Games</h2>
-                <p>Developed various casual games including endless runners, match-3 games, and board games like Ludo.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Casino Games Development</h2>
-            <div class="project">
-                <h2>Bingo, Poker, Teen Patti</h2>
-                <p>Developed and managed multiple casino games with features such as multiplayer modes, AI opponents, and real-time transactions.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>3D Simulation Games</h2>
-            <div class="project">
-                <h2>Soccer, Bike Racing, Car Racing, Boxing</h2>
-                <p>Created high-quality 3D simulation games with realistic physics, AI integration, and multiplayer support.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Multiplayer Games</h2>
-            <div class="project">
-                <h2>Single or Multiplayer Games via Photon or Custom Servers on Azure</h2>
-                <p>Implemented robust multiplayer frameworks and hosted custom servers to ensure seamless gameplay experiences.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Native Plugins Integration</h2>
-            <div class="project">
-                <h2>Real Money Transactions, Ad Mediation, Firebase SDKs</h2>
-                <p>Integrated various native plugins to enhance functionality and user experience.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Unity Platforms Expertise</h2>
-            <div class="project">
-                <h2>Platforms</h2>
-                <p>Android, iOS, Windows Mobile/PC, WebGL, Facebook Gameroom, TvOS (Apple), Chromecast (Android TV).</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Highlighted Projects</h2>
-            <div class="project">
-                <h2>Happs</h2>
-                <p><strong>Role:</strong> Developer</p>
-                <p><strong>Description:</strong> 3D map generation with building, POIs, water, and roads for given geographical areas.</p>
-                <p><strong>Technologies Used:</strong> Js, Three.js, Mapzen, OpenStreetMap.</p>
-                <p><a href="https://www.juegostudio.com/portfolio/happs">Project Link</a></p>
-                <div class="scroller">
-                    <img src="Images/Happs_01.avif" alt="Happs Screenshot">
-                </div>
-            </div>
-            <div class="project">
-                <h2>Ronnie Cop</h2>
-                <p><strong>Role:</strong> Developer</p>
-                <p><strong>Description:</strong> Endless runner game following the journey of Ronnie as a police officer.</p>
-                <p><strong>Technologies Used:</strong> Unity3D Mecanim, Google Analytics.</p>
-                <p><a href="https://www.youtube.com/watch?v=J3naI4qwY5g">YouTube Link</a></p>
-                <div class="scroller">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/J3naI4qwY5g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="project">
@@ -237,6 +185,16 @@
                 <div class="scroller">
                     <img src="Images/BingoGames_01.png" alt="Bingo Games Screenshot 1">
                     <img src="Images/BingoGames_02.png" alt="Bingo Games Screenshot 2">
+                </div>
+            </div>
+            <div class="project">
+                <h2>Happs</h2>
+                <p><strong>Role:</strong> Developer</p>
+                <p><strong>Description:</strong> 3D map generation with building, POIs, water, and roads for given geographical areas.</p>
+                <p><strong>Technologies Used:</strong> Js, Three.js, Mapzen, OpenStreetMap.</p>
+                <p><a href="https://www.juegostudio.com/portfolio/happs">Project Link</a></p>
+                <div class="scroller">
+                    <img src="Images/Happs_01.avif" alt="Happs Screenshot">
                 </div>
             </div>
         </section>
